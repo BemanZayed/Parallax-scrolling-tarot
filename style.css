@@ -6,18 +6,17 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  background: #030303;
+  background: #191c1f;  /* Clean solid background */
   color: white;
   overflow-x: hidden;
 }
 .background {
-  /* Removed background-image line */
   width: 100vw;
   height: 100vh;
   position: relative;
-  box-shadow: 0 50px 50px black;
+  box-shadow: 0 50px 50px #222;
   overflow: hidden;
-  background: #111; /* fallback solid dark background */
+  background: #111; /* fallback solid background */
 }
 h1 {
   position: absolute;
@@ -45,21 +44,23 @@ h1 {
   pointer-events: none;
 }
 .layer-1 {
-  background-image: linear-gradient(to bottom,transparent 50%,rgba(0,0,0,0.85) 70%, #020202), url("https://i.imgur.com/tRooGXM.png");
+  background-image: url("https://i.imgur.com/hvRcp9e.png");
   z-index: 70;
+  opacity: 0.8;
 }
 .layer-2 {
-  background-image: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.9) 80%, #020202), url("https://i.imgur.com/tRooGXM.png");
+  background-image: url("https://i.imgur.com/tRooGXM.png");
   z-index: 80;
+  opacity: 0.6;
 }
 .layer-3 {
-  background-image: linear-gradient(to bottom,transparent 60%,rgba(0,0,0,0.85), #020202), url("https://i.imgur.com/hvRcp9e.png");
+  background-image: linear-gradient(to bottom,transparent 50%,rgba(15,15,20,0.6) 90%, #111 100%);
   z-index: 90;
+  opacity: 0.7;
 }
 .content {
   position: relative;
   min-height: 400vh;
-  /* Optional: Remove background image for content too if needed */
   background: #222;
   padding-top: 100vh;
 }
