@@ -7,8 +7,8 @@ window.addEventListener('scroll', function() {
   document.querySelector('.layer-2').style.top = (0 - (scrolled * 0.5)) + 'px';
   document.querySelector('.layer-3').style.top = (0 - (scrolled * 0.75)) + 'px';
 
-  // EXTREMELY FAST transition (quarter viewport height)
-  var fadeRange = windowH * 0.25;
+  // ULTRA FAST transition
+  var fadeRange = windowH * 0.0625; // 1/16th of the viewport height!
   var pic1Alpha = (scrolled < fadeRange) ? 1 - scrolled / fadeRange : 0;
   var pic2Alpha = (scrolled < fadeRange) ? scrolled / fadeRange : 1;
 
