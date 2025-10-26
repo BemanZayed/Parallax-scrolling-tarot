@@ -11,12 +11,13 @@ body {
   overflow-x: hidden;
 }
 .background {
-  background-image: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.95) 70%, #020202), url("https://i.imgur.com/9KVO1Ok.jpg");
+  /* Removed background-image line */
   width: 100vw;
   height: 100vh;
   position: relative;
   box-shadow: 0 50px 50px black;
   overflow: hidden;
+  background: #111; /* fallback solid dark background */
 }
 h1 {
   position: absolute;
@@ -57,10 +58,9 @@ h1 {
 }
 .content {
   position: relative;
-  min-height: 400vh;   /* This is the key change for scrolling */
-  background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-  background-size: cover;
-  background-attachment: fixed;
+  min-height: 400vh;
+  /* Optional: Remove background image for content too if needed */
+  background: #222;
   padding-top: 100vh;
 }
 .tarot-card {
