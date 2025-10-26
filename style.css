@@ -1,14 +1,11 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  background: #191c1f;  /* Clean solid background */
+  background: #191c1f;
   color: white;
   overflow-x: hidden;
+}
+.container {
+  width: 100vw;
 }
 .background {
   width: 100vw;
@@ -16,7 +13,7 @@ body {
   position: relative;
   box-shadow: 0 50px 50px #222;
   overflow: hidden;
-  background: #111; /* fallback solid background */
+  background: #111;
 }
 h1 {
   position: absolute;
@@ -36,7 +33,7 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -46,17 +43,14 @@ h1 {
 .layer-1 {
   background-image: url("https://i.imgur.com/hvRcp9e.png");
   z-index: 70;
-  opacity: 0.8;
 }
 .layer-2 {
   background-image: url("https://i.imgur.com/tRooGXM.png");
   z-index: 80;
-  opacity: 0.6;
 }
 .layer-3 {
   background-image: linear-gradient(to bottom,transparent 50%,rgba(15,15,20,0.6) 90%, #111 100%);
   z-index: 90;
-  opacity: 0.7;
 }
 .content {
   position: relative;

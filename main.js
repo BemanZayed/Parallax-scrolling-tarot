@@ -1,14 +1,13 @@
 window.addEventListener('scroll', function() {
   var scrolled = window.scrollY;
-  var windowH = window.innerHeight || 800; // fallback height
+  var windowH = window.innerHeight || 800;
 
   // Parallax movement
   document.querySelector('.layer-1').style.top = (0-(scrolled*0.25))+'px';
   document.querySelector('.layer-2').style.top = (0-(scrolled*0.5))+'px';
   document.querySelector('.layer-3').style.top = (0-(scrolled*0.75))+'px';
 
-  // Opacity switch effect: PIC1 fades out, PIC2 fades in
-  // This transition occurs over the first 1.5 viewport heights
+  // Opacity switch effect
   var fadeRange = windowH * 1.5;
   var pic1Alpha = Math.max(0, 1 - scrolled / fadeRange);
   var pic2Alpha = Math.min(1, scrolled / fadeRange);
