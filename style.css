@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #222;
+  color: #edfdbb;
+}
+
+.site-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #a8ff78 0%, #78ffd6 100%);
+  color: #222;
+}
+
+.parallax {
+  height: 300vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.tarot-card {
+  position: absolute;
+  top: calc(var(--order) * 40vh);
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 320px;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  box-shadow: 0 30px 80px -10px #a6fb4c70;
+  background: rgba(20,40,20,0.88);
+  border-radius: 1.5rem;
+  transition: box-shadow 0.3s;
+  text-align: center;
+  z-index: calc(10 - var(--order));
+}
+
+.card-img {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 100%;
+  max-width: 220px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 32px #bfff31aa;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #78ffd6;
+  color: #222;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .tarot-card {
+    width: 95vw;
+    left: 2.5vw;
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+  }
+  .card-img {
+    max-width: 90vw;
+  }
+}
