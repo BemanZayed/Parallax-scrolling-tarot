@@ -45,15 +45,15 @@ h1 {
   pointer-events: none;
 }
 .layer-1 {
-  background-image: linear-gradient(to bottom,transparent 50%,rgba(0,0,0,0.85) 70%, #020202), url("https://i.imgur.com/bwEm8WB.png");
+  background-image: linear-gradient(to bottom,transparent 50%,rgba(0,0,0,0.85) 70%, #020202), url("https://i.imgur.com/tRooGXM.png");
   z-index: 70;
 }
 .layer-2 {
-  background-image: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.9) 80%, #020202), url("https://i.imgur.com/XxTPjmC.png");
+  background-image: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,0.9) 80%, #020202), url("https://i.imgur.com/tRooGXM.png");
   z-index: 80;
 }
 .layer-3 {
-  background-image: linear-gradient(to bottom,transparent 60%,rgba(0,0,0,0.85), #020202), url("https://i.imgur.com/F4xnzjU.png");
+  background-image: linear-gradient(to bottom,transparent 60%,rgba(0,0,0,0.85), #020202), url("https://i.imgur.com/hvRcp9e.png");
   z-index: 90;
 }
 .content {
